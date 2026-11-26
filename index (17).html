@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#173f32" />
+<title>Adarsh Singh | Event Operations & Team Coordination</title>
+<meta name="description" content="Adarsh Kumar Singh — operations support, stakeholder communication, documentation and team coordination." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#173f32;--deep:#102d25;--leaf:#2d7654;--lime:#c9e86b;--cream:#f7f4e9;--paper:#fffdf6;--ink:#1b2b24;--muted:#66746b;--orange:#f2a34a;--line:#dce4d6;--shadow:0 18px 50px rgba(23,63,50,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,244,233,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,63,50,.10)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;position:relative}.brand{font-family:Nunito,sans-serif;font-size:1.25rem;font-weight:900;color:var(--forest);letter-spacing:-.6px}.brand span{color:var(--leaf)}.links{display:flex;gap:26px;align-items:center;font-size:.9rem;font-weight:700;color:#526258}.links a:hover{color:var(--leaf)}.navpill{background:var(--forest);color:white!important;padding:10px 17px;border-radius:99px}.menu-toggle{display:none;border:1px solid var(--line);background:var(--paper);width:46px;height:42px;border-radius:13px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer}.menu-toggle span{display:block;width:19px;height:2px;background:var(--forest);border-radius:2px}.menu-toggle:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.hero{padding:84px 0 72px;background:radial-gradient(circle at 85% 18%,rgba(201,232,107,.30),transparent 25%),linear-gradient(135deg,#f7f4e9 0%,#edf2df 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;background:#e7efd4;color:var(--forest);border:1px solid #d7e5bd;border-radius:99px;padding:7px 13px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:#7ca83e;box-shadow:0 0 0 4px #d7e8b8}
+h1{font:900 clamp(3rem,6vw,5.6rem)/.98 Nunito,sans-serif;letter-spacing:-.065em;color:var(--forest);margin:24px 0 20px}h1 em{font-style:normal;color:var(--leaf)}.hero p{font-size:1.1rem;color:#53645a;max-width:650px;margin:0 0 27px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:99px;font-weight:800;font-size:.92rem;transition:.2s}.btn.primary{background:var(--forest);color:white;box-shadow:0 8px 20px #173f3225}.btn.secondary{border:1px solid #b9c8b8;color:var(--forest);background:#ffffff80}.btn:hover{transform:translateY(-2px)}
+.orbit{min-height:330px;position:relative;display:grid;place-items:center}.planet{width:270px;height:270px;border-radius:48% 52% 45% 55%;background:var(--forest);color:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-8deg);box-shadow:var(--shadow);position:relative}.planet:before{content:"";position:absolute;inset:-17px;border:2px dashed #91ad68;border-radius:50%;transform:rotate(20deg)}.planet .leaf{font-size:4rem}.planet strong{font:900 1.8rem Nunito}.planet small{color:#e7f0cb;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem}.sticker{position:absolute;background:var(--orange);color:#3b2a18;padding:12px 16px;border-radius:18px;font:900 .9rem Nunito;box-shadow:var(--shadow);transform:rotate(8deg)}.sticker.one{top:24px;right:0}.sticker.two{bottom:25px;left:0;background:var(--lime);transform:rotate(-7deg)}
+.ticker{background:var(--forest);color:#f5f3df;padding:13px 0;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:.06em}.ticker span{display:inline-block;padding-left:4%;word-spacing:9px}
+section{padding:78px 0}.section-tag{font-size:.76rem;text-transform:uppercase;letter-spacing:.16em;color:var(--leaf);font-weight:900}.section-title{font:900 clamp(2rem,4vw,3.1rem)/1.1 Nunito,sans-serif;letter-spacing:-.045em;color:var(--forest);margin:10px 0 14px}.section-intro{color:var(--muted);max-width:700px;margin:0 0 34px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}.about-card,.content-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.about-card{background:var(--forest);color:#f6f5e9;position:relative;overflow:hidden}.about-card:after{content:"🌱";font-size:8rem;position:absolute;right:-12px;bottom:-34px;opacity:.13}.about-card h3{font:900 1.65rem Nunito;margin:0 0 8px}.about-card p{color:#d7e4d7}.mini-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--lime);font-weight:900}.about-copy{font-size:1.02rem;color:#536258}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.chip{background:#edf3df;color:var(--forest);border:1px solid #dce8c9;padding:8px 12px;border-radius:99px;font-size:.82rem;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.experience{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}.experience-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.experience h3{font:900 1.25rem Nunito;color:var(--forest);margin:0}.company{font-weight:700;color:var(--leaf);margin:3px 0 12px}.date{white-space:nowrap;font-size:.76rem;font-weight:800;color:#657368;background:#edf1e6;padding:7px 10px;border-radius:99px}.experience ul{padding-left:19px;margin:0;color:#5b685f}.experience li{margin:7px 0}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.cap{padding:22px;background:#edf2df;border-radius:20px;border:1px solid #dbe5ca}.cap .emoji{font-size:1.6rem}.cap h3{font:900 1.05rem Nunito;color:var(--forest);margin:8px 0 5px}.cap p{font-size:.9rem;color:#617064;margin:0}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px}.project .number{font:900 2rem Nunito;color:#a5c26a}.project h3{font:900 1.3rem Nunito;color:var(--forest);margin:4px 0 8px}.project p{margin:0;color:#627066}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu{background:var(--paper);border:1px solid var(--line);padding:20px 22px;border-radius:18px}.edu strong{display:block;color:var(--forest)}.edu span{font-size:.88rem;color:var(--muted)}
+.contact{background:var(--forest);color:white;border-radius:30px;padding:42px;display:flex;justify-content:space-between;gap:25px;align-items:center}.contact h2{font:900 clamp(2rem,4vw,3rem)/1 Nunito;margin:0 0 12px;letter-spacing:-.04em}.contact p{color:#d4e0d5;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.contact-links a{background:var(--lime);color:var(--deep);font-weight:900;padding:12px 16px;border-radius:99px;font-size:.87rem}.contact-links a.alt{background:transparent;color:white;border:1px solid #789083}
+footer{padding:28px 0;color:#728075;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.orbit{min-height:290px}.cards,.project-grid{grid-template-columns:1fr}.cap-grid{grid-template-columns:1fr 1fr}.contact{display:block}.contact-links{margin-top:24px}.menu-toggle{display:flex}.links{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;background:var(--paper);border:1px solid var(--line);border-radius:0 0 18px 18px;padding:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:4px}.links.open{display:flex}.links a{display:block!important;padding:12px 14px;border-radius:10px}.links a:hover{background:#edf3df}.links .navpill{text-align:center;margin-top:4px}}
+@media(max-width:520px){.hero{padding:58px 0 50px}.planet{width:220px;height:220px}.cap-grid,.education{grid-template-columns:1fr}.experience-top{display:block}.date{display:inline-block;margin-top:9px}.contact{padding:29px 23px}section{padding:58px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin">
+<a class="brand" href="#home">Adarsh<span>Singh.</span> 🌱</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteLinks"><span></span><span></span><span></span></button>
+<div class="links" id="siteLinks">
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Strengths</a><a href="#projects">Projects</a><a class="navpill" href="#contact">Contact</a>
+</div></div></nav>
+<main id="home">
+<header class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><i class="dot"></i> Operations • Coordination • Execution</div><h1>Making plans<br>happen, <em>together.</em></h1><p>Hi, I’m Adarsh Kumar Singh — an organised and detail-oriented professional with experience in operations support, stakeholder communication, documentation and cross-functional coordination. Interested in creating smooth, thoughtful event experiences.</p><div class="actions"><a class="btn primary" href="#experience">Explore my experience ↗</a><a class="btn secondary" href="#contact">Let’s Connect</a></div></div><div class="orbit"><div class="planet"><div class="leaf">🌍</div><strong>People + Purpose</strong><small>Plan • Coordinate • Deliver</small></div><div class="sticker one">Good energy<br>great execution ✨</div><div class="sticker two">Rooted in teamwork 🌱</div></div></div></header>
+<div class="ticker"><span>🌱 PURPOSEFUL WORK　 ✦　 CLEAR COMMUNICATION　 ✦　 THOUGHTFUL COORDINATION　 ✦　 SMOOTH EXECUTION　 ✦　</span></div>
+<section id="about"><div class="wrap"><div class="section-tag">01 / A little about me</div><h2 class="section-title">Organised by nature.<br>Collaborative by choice.</h2><div class="about-grid"><div class="about-card"><div class="mini-label">My approach</div><h3>Bring clarity<br>to moving parts.</h3><p>I enjoy bringing structure to tasks, keeping communication clear and helping teams stay aligned on what needs to happen next.</p></div><div class="content-card"><p class="about-copy">I’m a Computer Science graduate from United College of Engineering and Research, Prayagraj. Through my experience as a Trainee US IT Recruiter and Business Analyst Trainee, I have developed skills in coordinating with stakeholders, tracking activities, maintaining accurate records and supporting day-to-day operations.</p><p class="about-copy">I’m keen to apply these transferable skills to event operations and team coordination — supporting timelines, people, information and on-ground execution with a proactive and dependable approach.</p><div class="chips"><span class="chip">Stakeholder communication</span><span class="chip">Task tracking</span><span class="chip">Documentation</span><span class="chip">Team coordination</span><span class="chip">Problem solving</span></div></div></div></div></section>
+<section id="experience" style="background:#f0f2e6"><div class="wrap"><div class="section-tag">02 / Experience</div><h2 class="section-title">Where I’ve contributed</h2><p class="section-intro">Experience built around communication, coordination, organised information and keeping work moving.</p><div class="cards">
+<article class="experience"><div class="experience-top"><div><h3>Trainee US IT Recruiter</h3><div class="company">Zodiac Solutions · Gurgaon</div></div><span class="date">Aug 2026 – Oct 2026</span></div><ul><li>Coordinated communication and follow-ups with multiple stakeholders to ensure timely updates and smooth processes.</li><li>Managed multiple tasks simultaneously while maintaining accurate records and information.</li><li>Collaborated with internal teams to coordinate activities and resolve operational queries.</li><li>Maintained structured documentation and tracked ongoing activities using ATS tools.</li></ul></article>
+<article class="experience"><div class="experience-top"><div><h3>Business Analyst Trainee</h3><div class="company">Infera · Noida</div></div><span class="date">Oct 2025 – Jan 2026</span></div><ul><li>Coordinated with cross-functional teams to track tasks, monitor progress and support daily operations.</li><li>Organised project information, maintained documentation and ensured accurate record management.</li><li>Communicated with stakeholders to understand requirements and coordinate necessary updates.</li><li>Identified information gaps, followed up on pending activities and supported issue resolution.</li></ul></article>
+</div></div></section>
+<section id="skills"><div class="wrap"><div class="section-tag">03 / What I bring</div><h2 class="section-title">The building blocks<br>of good operations.</h2><p class="section-intro">Practical strengths that help teams stay organised, informed and focused.</p><div class="cap-grid">
+<div class="cap"><div class="emoji">🧭</div><h3>Operations & Coordination</h3><p>Task management, workflow coordination, team coordination and operational support.</p></div>
+<div class="cap"><div class="emoji">🤝</div><h3>Communication</h3><p>Stakeholder communication, professional correspondence and timely follow-ups.</p></div>
+<div class="cap"><div class="emoji">🗂️</div><h3>Administration</h3><p>Documentation, record management, information organisation and reporting.</p></div>
+<div class="cap"><div class="emoji">🧩</div><h3>Problem Solving</h3><p>Identifying information gaps, handling queries and supporting issue resolution.</p></div>
+<div class="cap"><div class="emoji">⏱️</div><h3>Work Management</h3><p>Multitasking, time management, attention to detail and adaptability.</p></div>
+<div class="cap"><div class="emoji">💻</div><h3>Tools</h3><p>MS Excel, MS Office, email communication and ATS platforms.</p></div>
+</div></div></section>
+<section id="projects" style="background:#f0f2e6"><div class="wrap"><div class="section-tag">04 / Selected projects</div><h2 class="section-title">Learning through building.</h2><p class="section-intro">Academic projects that strengthened my approach to requirements, documentation, testing and collaboration.</p><div class="project-grid">
+<div class="project"><div class="number">01</div><h3>BloodLink</h3><p>Collaborated with a development team, coordinated requirements, maintained documentation and tracked project tasks and issues for a blood donation and inventory management platform.</p></div>
+<div class="project"><div class="number">02</div><h3>Face Attendance System with Anti-Spoofing</h3><p>Supported requirement analysis, task coordination, testing, documentation and issue tracking for an academic technology project.</p></div>
+</div></div></section>
+<section id="education"><div class="wrap"><div class="section-tag">05 / Education & certifications</div><h2 class="section-title">A foundation for continuous learning.</h2><div class="education">
+<div class="edu"><strong>B.Tech, Computer Science & Engineering</strong><span>United College of Engineering and Research, Prayagraj · 2021–2025</span></div>
+<div class="edu"><strong>Intermediate (PCM) · 83%</strong><span>Shakun Vidya Niketan, Prayagraj · 2020–2021</span></div>
+<div class="edu"><strong>High School · 87%</strong><span>Shakun Vidya Niketan, Prayagraj · 2018–2019</span></div>
+<div class="edu"><strong>Certifications</strong><span>Web Development Internship — Prodigy InfoTech<br>Android Application Development (Core Java) — NETCAMP<br>Network Management & Web Development — NETCAMP</span></div>
+</div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div><h2>Let’s make good<br>things happen.</h2><p>Open to conversations about event operations, coordination and operations support opportunities.</p></div><div class="contact-links"><a href="mailto:adarshkumarsingh8480@gmail.com">Email Adarsh ↗</a><a class="alt" href="tel:+919794048480">Call</a><a class="alt" href="https://www.linkedin.com/in/adarsh-kumar-singh-92b392224" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Adarsh Kumar Singh</span><span>Thoughtfully organised. Purposefully executed. 🌱</span><span><a href="https://www.coconauts.life/" target="_blank" rel="noopener">Inspired by Coconaüts Life’s sustainability-first visual world</a></span></div></footer>
+<script>
+(() => {
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('siteLinks');
+  if (!toggle || !links) return;
+  const closeMenu = () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation menu');
+  };
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  });
+  links.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 800) closeMenu(); });
+})();
+</script></body></html>
